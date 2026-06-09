@@ -17,6 +17,14 @@ function App() {
     setInput("");
   };
 
+  const toggleTask = (id: number) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task,
+      ),
+    );
+  };
+
   return (
     <div
       style={{
@@ -62,6 +70,7 @@ function App() {
         {tasks.map((task) => (
           <li
             key={task.id}
+            onClick={() => toggleTask(task.id)}
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -69,6 +78,7 @@ function App() {
               padding: "12px",
               marginBottom: "8px",
               textDecorationLine: task.completed ? "line-through" : "none",
+              cursor: "pointer",
               borderRadius: "4px",
               border: "1px solid #e2e9f0",
               userSelect: "none",
