@@ -1,75 +1,29 @@
-# React + TypeScript + Vite
+![](https://media.ztu.edu.ua/wp-content/uploads/2020/02/Group-6-1-1536x465.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Виконання лабораторної роботи передбачає вивчення прийомів роботи з
+системою контролю версій **Git**:
+* створення віддаленого репозиторію;
+* клонування віддаленого репозиторію;
+* виконання комітів;
+* створення гілок та перемикання між ними;
+* виконання комітів у різних гілках;
+* аутентифікація на GitHub за допомогою токена та через SSH;
+* вивантаження локального репозиторію на GitHub.
 
-Currently, two official plugins are available:
+У **практичній роботі №1** було:
+1. створено локальний репозиторій
+2. створено віддалений репозиторій на GitHub
+3. зроблено коміти у локальному репозиторії
+4. вивантажено усі коміти з локального у віддалений репозиторій
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Використані команди Git
+У **практичній роботі №1** було використано такі команди Git:
+[x] git init
+[x] git status
+[x] git add
+[x] git commit
+[x] git remote add
+[x] git push
+[x] git pull
+[x] git branch
+Виконав: Черепанов Ілля
